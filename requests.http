@@ -6,3 +6,9 @@ content-type:application/json
   "email":"123@qq.com",
   "password":"123"
 }
+
+### find a new user
+Get http://localhost:3000/auth/1
+
+### find all users with a given email
+Get http://localhost:3000/auth?email=1231@qq.com
