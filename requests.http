@@ -1,14 +1,44 @@
 ### create a new user
+Post http://localhost:3000/auth/signin
+content-type:application/json
+
+{
+  "email":"1231@qq.com",
+  "password":"123"
+}
+
+
+### login
 Post http://localhost:3000/auth/signup
 content-type:application/json
 
 {
-  "email":"123@qq.com",
+  "email":"1231@qq.com",
   "password":"123"
 }
 
+### signout
+Post http://localhost:3000/auth/signout
+content-type:application/json
+
+
+### whoami
+Get http://localhost:3000/auth/whoami
+
 ### find a new user
-Get http://localhost:3000/auth/1
+Get http://localhost:3000/auth/2
 
 ### find all users with a given email
-Get http://localhost:3000/auth?email=1231@qq.com
+Get http://localhost:3000/auth?email=123@qq.com
+
+### delete a user given id
+DELETE  http://localhost:3000/auth/1
+
+
+### update a user
+PATCH http://localhost:3000/auth/2
+content-type:application/json
+
+{
+  "email":"aaa@qq.com"
+}
