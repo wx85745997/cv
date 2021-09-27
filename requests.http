@@ -8,7 +8,7 @@ content-type:application/json
 }
 
 
-### login
+### signup
 Post http://localhost:3000/auth/signup
 content-type:application/json
 
